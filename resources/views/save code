@@ -1,0 +1,26 @@
+<form action="{{route('teams.store')}}" method="POST" enctype="mulitpart/form-data">
+    @csrf
+
+    
+    <x-text-input id="team_name" name="team_name" type="text" class="mt-4 block w-full" placeholder="Vul hier je team naam in" />
+
+    <x-text-input id="school_name" name="school_name" type="text" class="mt-4 block w-full" placeholder="Vul hier je school naam in"/>
+
+    <!-- <x-text-input id="players" name="players" type="text" class="mt-4 block w-full" placeholder="Voeg speler toe"/> -->
+
+    <!-- <x-text-input id="number_players" name="number_players" type="number" class="mt-4 block w-full" placeholder="Vul hier aantal spelers in"/> -->
+
+    <x-text-input id="locatie" name="locatie" type="text" class="mt-4 block w-full" placeholder="Vul hier de locatie in"/>
+
+    
+    <button type="submit" class="btn btn-success btn_create mt-4 block" valu>Opslaan</button>
+</form>
+
+@livewire('mulit-team-form')
+    
+</div>
+<div class="crate_img">
+        <div class="shrink-0 flex items-center">
+            <img src="{{ asset('img/logo.png')}}" alt="logo" class="">
+        </div>
+</div>
